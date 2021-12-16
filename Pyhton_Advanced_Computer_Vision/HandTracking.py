@@ -27,8 +27,8 @@ while True:
                 h, w, c = img.shape  # altura, largura e o canal
                 cx, cy = int(lm.x * w), int(lm.y * h)  # A posição estava em decima passo para numeros inteiros
                 print(id, cx, cy)
-                #if id == 0:
-                cv2.circle(img, (cx, cy), 25, (255, 255, 5),
+                if id == 11:
+                 cv2.circle(img, (cx, cy), 25, (255, 255, 5),
                                cv2.FILLED)  # desenho um circulo á volta de todos os pontos
 
             dotDraw.draw_landmarks(img, Handldmk, mpHands.HAND_CONNECTIONS)  # desenha
